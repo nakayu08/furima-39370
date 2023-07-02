@@ -6,7 +6,7 @@
 | ------------------ | ------ | ------------------------- |
 | nickname           | string | null: false               |
 | email              | string | null: false ,unique: true |
-| password           | string | null: false               |
+| encrypted_password | string | null: false               |
 | first_name         | string | null: false               |
 | last_name          | string | null: false               |
 | first_name_kana    | string | null: false               |
@@ -23,7 +23,6 @@
 
 | Column             | Type       | Options                        |
 | ------------------ | ------     | ------------------------------ |
-| image              | string     | null: false                    |
 | name               | string     | null: false                    |
 | explanation        | text       | null: false                    |
 | category_id        | integer    | null: false                    |
@@ -57,7 +56,7 @@
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | post_code          | string     | null: false                    |
-| prefectures        | string     | null: false                    |
+| prefectures        | integer    | null: false                    |
 | municipalities     | string     | null: false                    |
 | address            | string     | null: false                    |
 | building_name      | string     |                                |
