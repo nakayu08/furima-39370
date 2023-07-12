@@ -1,4 +1,5 @@
 FactoryBot.define do
+  # 出品者用データ factory名は「user」とします。
   factory :user do
     nickname              {Faker::Name.initials(number: 2)}
     email                 {Faker::Internet.free_email}
