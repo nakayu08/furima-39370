@@ -2,7 +2,10 @@ require 'rails_helper'
 
 RSpec.describe OrderFrom, type: :model do
   before do
-    @order_from= FactoryBot.build(:order_from)
+    @user = FactoryBot.create(:user)
+    @item = FactoryBot.create(:item)
+    @order_from= FactoryBot.build(:order_from,user_id: @user.id,item_id: @item.id)
+    sleep 0.1 
   end
 
   context '内容に問題ない場合' do
