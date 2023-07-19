@@ -8,9 +8,7 @@ FactoryBot.define do
     telephone_number { '09012341234' }
 
     token {"tok_abcdefghijk00000000000000000"}
-
-
-    association :user_id, factory: :user
-    association :item_id, factory: :item
+    user_id { Faker::Number.non_zero_digit }
+    item_id { Faker::Number.non_zero_digit }
   end
 end
