@@ -2,6 +2,9 @@ class OrderFrom
   include ActiveModel::Model
   attr_accessor :post_code,:prefecture_id,:municipalities,:address,:building_name,:telephone_number,:order_id,:user_id,:item_id
 
+  attr_accessor :token
+  validates :token, presence: true
+
   # ここにバリデーションの処理を書く
   validates :prefecture_id, numericality: { other_than: 1, message: "can't be blank" } 
 

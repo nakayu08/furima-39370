@@ -87,5 +87,11 @@ RSpec.describe OrderFrom, type: :model do
       
     end
 
+    it "tokenが空では登録できないこと" do
+      @order_from.token=nil
+      @order_from.valid?
+      expect(@order_from.errors.full_messages).to include "Token can't be blank"
+    end
+
   end
 end
