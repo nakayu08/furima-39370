@@ -7,7 +7,7 @@ function calculation (){
 
 
     add_tax_price.innerHTML = Math.floor(`${item_price*0.1}`);
-    profit.innerHTML =Math.floor(`${item_price*0.9}`);
+    profit.innerHTML =Math.ceil(`${item_price-item_price*0.1}`);
   });
 };
 
