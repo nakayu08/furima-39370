@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const previewImage = document.createElement('img');
     previewImage.setAttribute('class', 'preview-image');
     previewImage.setAttribute('src', blob);
+    previewImage.classList.add('preview-size'); 
 
     // 生成したHTMLの要素をブラウザに表示させる
     previewWrapper.appendChild(previewImage);

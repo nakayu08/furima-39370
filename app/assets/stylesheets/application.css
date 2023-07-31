@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ .preview-size{
+  height: 150px;
+  width: auto;
+}
